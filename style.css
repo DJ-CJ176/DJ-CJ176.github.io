@@ -1,0 +1,115 @@
+:root {
+  --background: #fffaf5;
+  --text: #29233a;
+  --accent: #7952a3;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font: 16px/1.6 system-ui, sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 8%;
+  background: var(--background);
+  border-bottom: 1px solid #e8dfeb;
+}
+
+.logo {
+  color: var(--accent);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+nav a, footer a, #contact a {
+  color: var(--accent);
+}
+
+nav a {
+  text-decoration: none;
+}
+
+main {
+  max-width: 850px;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  padding: 4rem 0;
+  scroll-margin-top: 5rem;
+}
+
+.hero {
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  line-height: 1.1;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.6rem;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+}
+
+.card {
+  padding: 1.25rem;
+  border-radius: 0.8rem;
+  background: var(--card);
+  box-shadow: 0 4px 18px #29233a12;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 1rem;
+  }
+
+  nav {
+    gap: 0.7rem;
+    font-size: 0.9rem;
+  }
+}
